@@ -23,7 +23,7 @@ filterPeaks {chromVAR}
 min_fragments_per_peak	:minimum number of fragmints in peaks across all samples
 
 Motif-Accessibility-Deviation
-The first application is simply to compute the variability of each motif or annotation across the cells or samples of interest.
+The first application is simply to compute the variability of each motif or annotation across the cells or samples of interest.This step will take a long time.
 
 getJasparMotifs {chromVAR}
 Collection:
@@ -44,7 +44,7 @@ expect_cell_number:an integer scalar or vector with the desired number of groups
 Clustering
 The dimensionality reduction clustering of single cells using the data of scatac SEQ may find new subsets that can not be found by conventional RNA sequencing clustering; It can also be cross verified with RNA sequencing clustering to improve the accuracy of single cell clustering.
 
-We provide two clustering methods: 1. Consider the number of reads on each peak. 2. Only consider whether chromatin is open. The results obtained by the two methods can be used for cross validation and selective analysis.
+We provide two clustering methods: 1. Consider the number of reads on each peak. 2. Only consider whether chromatin is open. The results obtained by the two methods can be used for cross validation and selective analysis.This step will take a long time.
 
 Variability
 Here is the difference accessible area between the two groups selected by the user. The user can set the maximum acceptable adjusted p-value for data filtering. This table not only shows the starting site and chromosome of the difference accessible region, but also includes the difference multiple and adjusted p-value data.
@@ -57,12 +57,12 @@ Threshold:variability threshold – use only deviations with variability greater
 Perplexity:perplexity parameter for tsne
 
 Co-accessibility
-Calculate the co accessibility between paired genes. Evaluate the co accessibility between genes according to the score. The higher the score, the greater the co accessibility of genes, indicating that the possibility of co expression of these two genes is greater. Draw a visual chart according to the evaluation results.
+Calculate the co accessibility between paired genes. Evaluate the co accessibility between genes according to the score. The higher the score, the greater the co accessibility of genes, indicating that the possibility of co expression of these two genes is greater. Draw a visual chart according to the evaluation results.This step will take a long time.
 
 At the same time, we also calculated the gene activity score. The higher the score, the greater the gene accessibility, indicating the higher the gene expression activity in a certain period of time.
 
 Accessibility-Trajectories
-During development, cells respond to stimuli, and cells in different states express different genes, so as to complete their work. These transient states are often difficult to characterize because it is difficult or impossible to purify cells between more stable states. Pseudo timing analysis of single-cell ATAC SEQ can view these states without purifying cells.
+During development, cells respond to stimuli, and cells in different states express different genes, so as to complete their work. These transient states are often difficult to characterize because it is difficult or impossible to purify cells between more stable states. Pseudo timing analysis of single-cell ATAC SEQ can view these states without purifying cells.This step will take a long time.
 
 Pathway
 Using GO database and rGREAT package, we can get the enrichment of our target genes at three levels: cellular component (CC), molecular function (MF) and biological process (BP).
